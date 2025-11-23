@@ -1,0 +1,40 @@
+// Student Name     : Emma Brennan
+// Student Id Number: C00313274
+// Date 	    	: 18-November-2025
+// Lab		    	: Lab 8/Exercise 1
+// Purpose 	    	: Triangle shape class
+
+
+public class Triangle extends TwoDShape {
+	
+	private double base;
+	private double height;
+	
+	public Triangle(String name, String colour, double base, double height) {
+		super(name, colour);
+		setBase(base);
+		setHeight(height);
+	}
+	public double getBase() {
+		return base;
+	}
+	public void setBase(double base) {
+		this.base = base;
+	}
+	public double getHeight() {
+		return height;
+	}
+	public void setHeight(double height) {
+		this.height = height;
+	}
+	
+	@Override
+	public double area() {
+		return 0.5 * base * height;
+	}
+	@Override
+	public String toString() {
+		return (super.toString() + "\nBase = " + base + "\nHeight = " + height);
+	}
+
+}
